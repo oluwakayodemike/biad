@@ -61,7 +61,7 @@ export function HeroSection() {
           </h1>
 
           <a
-            href="#"
+            href="/drops"
             className="animate-fade-in group mt-8 inline-flex items-center border-2 border-foreground px-8 py-3 font-serif text-base tracking-[0.2em] text-foreground transition-colors hover:bg-foreground hover:text-background md:mt-10 md:px-10 md:py-4 md:text-lg"
             style={{ animationDelay: "0.6s", animationFillMode: "backwards" }}
           >

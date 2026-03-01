@@ -12,7 +12,7 @@ import {
 
 const navLinks = [
   { label: "NEW DROPS", href: "#" },
-  { label: "SHOP ALL", href: "#" },
+  { label: "SHOP ALL", href: "/drops" },
   { label: "COLLECTIONS", href: "#" },
   { label: "LOOKBOOK", href: "#" },
   { label: "ABOUT", href: "#" },

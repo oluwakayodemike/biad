@@ -94,7 +94,7 @@ export function RecentDrops() {
         {/* View all button */}
         <div className="mt-12 flex justify-center md:mt-16">
           <a
-            href="#"
+            href="/drops"
             className="group inline-flex items-center border-2 border-foreground px-10 py-3 font-serif text-base tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background md:px-14 md:py-4 md:text-lg"
           >
             VIEW ALL
