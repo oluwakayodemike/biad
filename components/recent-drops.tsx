@@ -51,7 +51,7 @@ export function RecentDrops() {
           RECENT DROPS
         </h2>
 
-        {/* Product grid - 2 cols mobile, 3 cols desktop matching the sketch */}
+        {/* Product grid - 2 cols mobile, 3 cols desktop */}
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
           {products.map((product) => (
             <a
@@ -67,16 +67,16 @@ export function RecentDrops() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 350px"
                 />
-                {/* Quick add button - bottom left like the sketch */}
+                {/* Quick add button */}
                 <button
-                  className="absolute bottom-3 left-3 flex size-9 items-center justify-center border border-foreground/40 bg-background/80 text-foreground opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100 hover:bg-foreground hover:text-background"
+                  className="group/quick-add absolute bottom-3 left-3 flex size-9 items-center justify-center border border-foreground/40 bg-background/80 text-foreground opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100 hover:bg-foreground hover:text-background"
                   aria-label={`Add ${product.name} to cart`}
                   onClick={(e) => {
                     e.preventDefault()
                     e.stopPropagation()
                   }}
                 >
-                  <Plus className="size-4" strokeWidth={2} />
+                  <Plus className="size-4 transition-transform duration-300 group-hover/quick-add:rotate-90" strokeWidth={2} />
                 </button>
               </div>
               <div className="mt-3">
